@@ -58,12 +58,27 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Open Sans" , sans-serif;
+    background-color: #D4CEA7;
 }
-
+ol {
+    list-style: decimal;
+}
+ul {
+    list-style: disc;
+}
+ol ,ul {
+    padding-left: 40px;
+}
 .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.stretch {
+    align-items: stretch;
 }
 
 .container {
@@ -76,9 +91,59 @@ body {
     padding: 32px 0;
    background-color: #F96115; 
 }
+.header ul {
+    list-style: none;
+    padding-left: 0;
+}
 .nav-menu a {
     text-decoration: none;
-    margin-left: 40px;
+    margin-right: 32px;
     color: #ffffff;
+    font-size: 24px;
+    
+}
+
+/* Lists */
+
+.menu-wrap {
+    padding: 60px 0;
+}
+.menu {
+    padding: 32px 50px;
+    background-color: #005979;
+    width: 30%;
+    font-size: 24px;
+    color: #ffffff;
+}
+.menu li {
+    line-height: 2;
+}
+.menu .sub-menu {
+    list-style: square;
+}
+.list-style-image {
+    list-style-image: url(../media/tick.svg);
+}
+
+/* Description  list */
+
+dl {
     font-size: 20px;
+}
+dt {
+    font-size: 30px;
+}
+dd {
+    padding-left: 40px;
+    margin-bottom: 32px;
+}
+
+/* Footer */
+.footer {
+    padding: 32px 0;
+    background-color: #252C22;
+}
+.footer ul {
+    list-style: none;
+    padding-left: 0;
 }
